@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zen_primary">#4DB6AC</color>
+    <color name="zen_background">#F5F9F9</color>
+    <color name="zen_card_heart">#FFEBEE</color>
+    <color name="zen_card_oxygen">#E3F2FD</color>
+    <color name="zen_text_dark">#2C3E50</color>
+    <color name="text_dark">#000000</color>
+</resources>
