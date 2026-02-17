@@ -1,38 +1,42 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/zen_background">
+    android:background="#E3F2FD"
+    android:padding="30dp">
 
     <TextView
         android:id="@+id/tv_instruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toca para iniciar"
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/breathing_bubble"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="Prepárate..."
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#0277BD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"/>
 
-    <View
-        android:id="@+id/breathing_bubble"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/circle_bubble"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@drawable/breathing_circle"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_speed="1.0"/>
 
-    <Button
-        android:id="@+id/btn_start_exercise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Iniciar"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Terminar Ejercicio"
+        android:textSize="18sp"
+        app:cornerRadius="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="#D32F2F"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

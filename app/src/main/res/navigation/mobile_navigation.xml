@@ -8,18 +8,59 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.zenboom.app.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="Inicio"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_exercise_menu"
+        android:name="com.zenboom.app.ui.exercises.ExerciseMenuFragment"
+        android:label="Ejercicios"
+        tools:layout="@layout/fragment_exercise_menu">
+        <action android:id="@+id/action_menu_to_breathing" destination="@id/nav_breathing" />
+        <action android:id="@+id/action_menu_to_54321" destination="@id/nav_technique" />
+        <action android:id="@+id/action_menu_to_bubbles" destination="@id/nav_bubbles" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_breathing"
+        android:name="com.zenboom.app.ui.exercises.ExerciseFragment"
+        android:label="Respiración"
+        tools:layout="@layout/fragment_exercise" />
+
+    <fragment
+        android:id="@+id/nav_technique"
+        android:name="com.zenboom.app.ui.exercises.TechniqueFragment"
+        android:label="Técnica 5-4-3-2-1"
+        tools:layout="@layout/fragment_technique" />
+
+    <fragment
+        android:id="@+id/nav_bubbles"
+        android:name="com.zenboom.app.ui.exercises.BubblesFragment"
+        android:label="Burbujas"
+        tools:layout="@layout/fragment_bubbles" />
+
+    <fragment
+        android:id="@+id/nav_crisis"
+        android:name="com.zenboom.app.ui.crisis.CrisisFragment"
+        android:label="Modo Crisis"
+        tools:layout="@layout/fragment_crisis" />
+
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="com.zenboom.app.ui.ProgressFragment"
+        android:label="Mi Progreso"
+        tools:layout="@layout/fragment_progress" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.zenboom.app.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="Dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.zenboom.app.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="Notificaciones"
         tools:layout="@layout/fragment_notifications" />
+
 </navigation>

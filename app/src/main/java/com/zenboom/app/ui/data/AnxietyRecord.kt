@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "anxiety_history")
 data class AnxietyRecord(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
-    val timestamp: Long,
+    val timestamp: Long,      // Usamos timestamp para ordenar más fácil
     val heartRate: Int,
     val oxygen: Int,
     val stressLevel: String

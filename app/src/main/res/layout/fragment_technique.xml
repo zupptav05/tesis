@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="#E8F5E9"> <TextView
+    android:id="@+id/tv_step_number"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="5"
+    android:textSize="80sp"
+    android:textStyle="bold"
+    android:textColor="#2E7D32"/>
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cosas que puedas ver"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Listo, siguiente"
+        android:backgroundTint="#66BB6A"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:backgroundTint="#EF5350"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

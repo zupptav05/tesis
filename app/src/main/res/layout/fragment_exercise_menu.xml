@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F9FC"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un ejercicio"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#37474F"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btn_breathing"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Respiración Guiada"
+        android:backgroundTint="#4FC3F7"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_54321"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Técnica 5-4-3-2-1"
+        android:backgroundTint="#81C784"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_bubbles"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Burbujas de Calma"
+        android:backgroundTint="#29B6F6"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar al Inicio"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#EF5350"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

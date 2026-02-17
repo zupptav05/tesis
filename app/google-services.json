@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050807748487",
+    "project_id": "zenbom-8de78",
+    "storage_bucket": "zenbom-8de78.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050807748487:android:f4db4cc719dfa334ec7522",
+        "android_client_info": {
+          "package_name": "com.zenboom.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhPqSNVH60llXGYaoq8qJUveU2AdlKeOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
